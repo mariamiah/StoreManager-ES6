@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>MIMIZ HOME STORE|AdminDashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin_dashboardstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="topnav-list">
+            <ul>
+                <li id="welcome"><a href="admin_dashboard.html">Welcome Maria!(Admin)</a></li>
+                <li id="admin"><a href="dashboard.html">Attendant Dashboard</a></li>
+                <li id="admin"><a href="admin_dashboard.html">Administrator Dashboard</a></li>
+                <li id="logout"><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rowone">
+        <div class="leftcolumn">
+            <div class="card" id="admincards">
+
+                <h5>Thursday, Oct 11, 2018</h5>
+                <div class="row">
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/blue-denim-jeans-500x500.jpg" alt="Denim Jeans">
+                            <h4>Tailored Jeans</h4>
+                            <p class="price"><strong>shs.50,000</strong></p>
+                            <p>
+                                <form action="edit_product.html"><button id="edit">Edit</button></form>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/covert.jpg" alt="Denim Jeans">
+                            <h4>Covert Jeans</h4>
+                            <p class="price"><strong>shs.65,000</strong></p>
+                            <p>
+                                <form action="edit_product.html"><button id="edit">Edit</button></form>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/open knee.jpg" alt="Denim Jeans">
+                            <h4>open knee jeans</h4>
+                            <p class="price"><strong>shs.50,000</strong></p>
+                            <p>
+                                <form action="edit_product.html"><button id="edit">Edit</button></form>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/slim mom jeans.jpg" alt="Denim Jeans">
+                            <h4>Slim mom Jeans</h4>
+                            <p class="price"><strong>shs.75,000</strong></p>
+                            <p>
+                                <form action="edit_product.html"><button id="edit">Edit</button></form>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p><strong>Today's quote</strong></p>
+                <p><strong><I>" Denim Jeans represent democracy in fashion"</I></strong></p>
+            </div>
+            <div class="card" id="admincards">
+                <h3>SUMMARY REPORT</h3>
+                <table id="adminsalestable">
+                    <tr>
+                        <th></th>
+                        <th>DATE</th>
+                        <th>TOTAL SALES</th>
+                        <th>EXPENSES</th>
+                        <th>PROFITS</th>
+                        <th>LOSSES</th>
+                        <th>BEST SELLER</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>11/10/2018</td>
+                        <td>shs.707,000</td>
+                        <td>shs.300,000</td>
+                        <td>shs.397,000</td>
+                        <td>20,0000</td>
+                        <td>Covert Jeans</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>12/10/2018</td>
+                        <td>shs.990,000</td>
+                        <td>shs.320,000</td>
+                        <td>shs.517,000</td>
+                        <td>shs.300,000</td>
+                        <td>Covert Jeans</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>13/10/2018</td>
+                        <td>shs.1,000,000</td>
+                        <td>shs.560,000</td>
+                        <td>shs.200,000</td>
+                        <td>shs.50,000</td>
+                        <td>Sleeve T-shirt</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>14/10/2018</td>
+                        <td>shs.930,000</td>
+                        <td>shs.560,000</td>
+                        <td>shs.100,000</td>
+                        <td>shs.70,000</td>
+                        <td>Denim Shorts</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>15/10/2018</td>
+                        <td>shs.1300,000</td>
+                        <td>shs.960,000</td>
+                        <td>shs.150,000</td>
+                        <td>shs.50,000</td>
+                        <td>Denim Shorts</td>
+                    </tr>
+
+                </table>
+                <div class="table-footer">
+                    <button id="prev">
+                        << Previous</button>&nbsp; <button id="next">Next >>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card" id="admincards">
+                <form>
+                    <input type="text" placeholder="Search.." name="search" id="itemsearch">
+                    <button type="submit" id="searchbutton">Search</i></button>
+                </form>
+            </div>
+            <div class="card" id="admincards">
+                <form action="admin_productlist.html">
+                    <div class="subsection"><input type="submit" value="Product List" /></div>
+                </form>
+                <br>
+                <form action="categories.html">
+                    <div class="subsection"><input type="submit" value="Manage Categories" /></div>
+                </form>
+                <br>
+                <form action="employees.html">
+                    <div class="subsection"><input type="submit" value="Manage Employees" /></div>
+                </form><br>
+                <form action="admin_about.html">
+                    <div class="subsection"><input type="submit" value="About the Store" /></div>
+                </form><br>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Mimiz Home Store, 2018</h3>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>MIMIZ HOME STORE|Attendant Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin_dashboardstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="topnav-list">
+            <ul>
+                <li id="welcome"><a href="dashboard.html">Welcome Maria!(Attendant)</a></li>
+                <li id="admin"><a href="dashboard.html">Attendant Dashboard</a></li>
+                <li id="admin"><a href="admin_dashboard.html">Administrator Dashboard</a></li>
+                <li id="logout"><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rowone">
+        <div class="leftcolumn">
+            <div class="card">
+
+                <h5>Thursday, Oct 11, 2018</h5>
+                <div class="row">
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/blue-denim-jeans-500x500.jpg" alt="Denim Jeans">
+                            <h4>Tailored Jeans</h4>
+                            <p class="price"><strong>shs.50,000</strong></p>
+                            <p>
+                                <form action="cart.html"><button>Add to Cart</button></form>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/covert.jpg" alt="Denim Jeans">
+                            <h4>Covert Jeans</h4>
+                            <p class="price"><strong>shs.65,000</strong></p>
+                            <p>
+                                <form action="cart.html"><button>Add to Cart</button></form>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/open knee.jpg" alt="Denim Jeans">
+                            <h4>open knee jeans</h4>
+                            <p class="price"><strong>shs.50,000</strong></p>
+                            <p>
+                                <form action="cart.html"><button>Add to Cart</button></form>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="cardone">
+                            <img src="img/slim mom jeans.jpg" alt="Denim Jeans">
+                            <h4>Slim mom Jeans</h4>
+                            <p class="price"><strong>shs.75,000</strong></p>
+                            <p>
+                                <form action="cart.html"><button>Add to Cart</button></form>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p><strong>Today's quote</strong></p>
+                <p><strong><I>" Denim Jeans represent democracy in fashion"</I></strong></p>
+            </div>
+            <div class="card">
+                <h3>Sales Record</h3>
+                <table id="all-sales">
+                    <tr>
+                        <th></th>
+                        <th>DATE</th>
+                        <th>AMOUNT</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>11/10/2018</td>
+                        <td>shs.250,000</td>
+                        <form action="salesrecord.html">
+                            <td><button>View</button></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>12/10/2018</td>
+                        <td>shs.230,000</td>
+                        <form action="salesrecord.html">
+                            <td><button>View</button></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>13/10/2018</td>
+                        <td>shs.400,000</td>
+                        <form action="salesrecord.html">
+                            <td><button>View</button></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>14/10/2018</td>
+                        <td>shs.430,000</td>
+                        <form action="salesrecord.html">
+                            <td><button>View</button></td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>15/10/2018</td>
+                        <td>shs.480,000</td>
+                        <form action="salesrecord.html">
+                            <td><button>View</button></td>
+                        </form>
+                    </tr>
+
+                </table>
+                <div class="table-footer" id="salesfooter">
+                    <button id="prev">
+                        << Previous</button>&nbsp; <button id="next">Next >>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <form>
+                    <input type="text" placeholder="Search.." name="search" id="itemsearch">
+                    <button type="submit" id="searchbutton">Search</i></button>
+                </form>
+            </div>
+            <div class="card">
+                <form action="inventory.html">
+                    <div class="subsection"><input type="submit" value="Product List" /></div>
+                </form>
+                <br>
+                <form action="cart.html">
+                    <div class="subsection"><input type="submit" value="Make a Sale" /></div>
+                </form>
+                <br>
+                <form action="about.html">
+                    <div class="subsection"><input type="submit" value="About the Store" /></div>
+                </form><br>
+            </div>
+            <div class="card">
+                <h3>Profile</h3>
+                <div class="profilecard">
+                    <p>Username: &nbsp;Maria</p>
+                    <p class="title">Role:Store Attendant</p>
+                    <p>Sales Record: 15</p>
+                    <p>Address: Kampala</p>
+                    <p>Email:</p>
+                    <p><button>Edit profile details</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Mimiz Home Store, 2018</h3>
+    </div>
+
+</body>
+
+</html>

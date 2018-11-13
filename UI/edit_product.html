@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>MIMIZ HOME STORE|Edit Product</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/inventorystyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/cartsyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin_dashboardstyle.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="topnav-list">
+            <ul>
+                <li id="welcome"><a href="admin_dashboard.html">Welcome Maria!(Admin)</a></li>
+                <li id="admin"><a href="#">Attendant Dashboard</a></li>
+                <li id="admin"><a href="admin_dashboard.html">Administrator Dashboard</a></li>
+                <li id="logout"><a href="../index.html">Logout</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="rowone">
+        <div class="secondcolumn">
+            <div class="card" id="product">
+                <div class="container">
+                    <form action="admin_productlist.html">
+                        <div class="billing">
+                            <h3>Product Form</h3>
+                            <input type="text" id="fname" name="productname" value="Classic Hooded Sweat Shirt">
+                            <select id="select">
+                                <option value="Sweatshirts">Sweatshirts</option>
+                                <option value="Jeans">Jeans</option>
+                                <option value="Shorts">Shorts</option>
+                                <option value="tees">Tees</option>
+                                <option value="jackets">Jackets</option>
+                                <option value="trousers">Trousers</option>
+                                <option value="Skirts">Skirts</option>
+                                <option value="Suits">Suits</option>
+                                <option value="dresses">Dresses</option>
+                            </select>
+                            <input type="text" id="ccnum" name="productcode" value="567-565-367-554" />
+                            <input type="file" name="pic" id="upload" accept="image/*" />
+                            <input type="text" id="ccnum" name="size" value="XL" />
+                            <input type="text" id="ccnum" name="price" value="75000" />
+                            <input type="text" id="ccnum" name="color" value="Blue" />
+                            <input type="text" id="ccnum" name="quantity" value="5 pieces" />
+                            <textarea name="description">Enter description...</textarea>
+
+                        </div>
+
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
