@@ -102,7 +102,7 @@ img {
 }
 
 /* Add style to the email box*/
-.login input[type=email] {
+.login input[type=text] {
     width: 70%;
     height: auto;
     padding: 10px 10px;
