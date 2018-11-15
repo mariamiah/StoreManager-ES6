@@ -171,6 +171,12 @@ label {
 #indexnav {
     height: 30px;
 }
+/* Style the Error Message*/
+#errmessage{
+    text-align: center;
+    color: red;
+    font-weight:bold;
+}
 
 /*Add responsiveness for a mobile phone device*/
 @media only screen and (min-width: 280px) and (max-width: 480px) {

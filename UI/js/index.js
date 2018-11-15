@@ -33,7 +33,7 @@ function login(e){
             }
         }else{
             console.log(json)
-            document.getElementById('message').innerHTML;
+            document.getElementById('errmessage').innerHTML=json.message;
         }
     })
 }
