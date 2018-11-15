@@ -1,0 +1,82 @@
+/* resize the table*/
+#checkout {
+    width: 100%;
+}
+
+/* Add style to the first column */
+.firstcolumn {
+    width: 77%;
+    margin-top: 0%;
+}
+
+/* Style the second column */
+.secondcolumn {
+    width: 77%;
+    margin-left: 0%;
+    width: 100%;
+
+}
+
+/* Style the table headers and content */
+#checkout th,
+#checkout td {
+    padding: 7px;
+}
+
+/* Style the container for the right side column containing customer details*/
+.container {
+    background-color: #f2f2f2;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+/* Style the text boxes */
+.billing input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the form icons */
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+/* Style the continue to checkout button */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Add color to the electronic payment options*/
+#visa {
+    color: navy;
+}
+
+#amex {
+    color: blue;
+}
+
+#mastercard {
+    color: red;
+}
+
+#discover {
+    color: orange;
+}

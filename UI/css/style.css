@@ -1,0 +1,363 @@
+/* Add style to the body */
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: lightgrey;
+    font-family: Arial;
+    padding: 10px;
+}
+
+/* Add style to the nav-bar*/
+.topnav {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Style the menu list items in the nav-bar*/
+.topnav-list ul {
+    margin-left: -80px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    float: right;
+}
+
+.topnav-list li {
+    font-size: 18px;
+    height: 10px;
+    display: inline-block;
+    padding: 10px 50px;
+    margin-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topnav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav-list a:hover {
+
+    color: red;
+
+}
+
+/*Style the main section of body*/
+.main {
+    display: flex;
+    height: 74%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+/*Add style to the login form*/
+.login {
+    margin-left: 1%;
+    border: solid thin lightgreen;
+    margin-top: 1px;
+    background-color: white;
+    width: px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+/* Style the image*/
+img {
+    height: 650px;
+    width: 600px;
+    padding: 0px 15px;
+}
+
+/*Style the submit button*/
+#submitbutton {
+    height: 50%;
+    width: 50%;
+    text-align: auto;
+    padding: 10px 55px;
+    margin-left: 1%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    background-color: green;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style the form header*/
+#brand h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+    padding: 10px;
+}
+
+/* Add style to the form headers */
+.login form h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+    padding: 10px;
+}
+
+/* Add style to the email box*/
+.login input[type=text] {
+    width: 70%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: black;
+    border-color: mediumturquoise;
+    border-radius: 12%;
+}
+
+/* Add style to text boxes */
+.login input[type=text] {
+    width: 70%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: black;
+    border-color: mediumturquoise;
+    border-radius: 12%;
+}
+
+/* Add style to the password box*/
+.login input[type=password] {
+    width: 70%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    color: black;
+    border-color: mediumturquoise;
+    border-radius: 12%;
+}
+
+/* Style the text boxes */
+.login input[type=text]:hover {
+    border-color: red;
+}
+
+.login input[type=email]:hover {
+    border-color: red;
+}
+
+.login input[type=password]:hover {
+    border-color: red;
+}
+
+/*Style the form labels*/
+label {
+    padding: 10% 11.5%;
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style the logo on the login page*/
+#storelogo {
+    height: 90px;
+    width: 250px;
+    padding-top: 10px;
+    margin-left: 85px;
+}
+
+/* Style the navbar of the index page */
+#indexnav {
+    height: 30px;
+}
+/* Style the Error Message*/
+#errmessage{
+    text-align: center;
+    color: red;
+    font-weight:bold;
+}
+
+/*Add responsiveness for a mobile phone device*/
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+    .login {
+        width: 80%;
+        height: 60%;
+    }
+
+    .main {
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    img {
+        height: 200px;
+        width: 260px;
+        max-width: 100%;
+        margin-left: 5%;
+    }
+
+    body {
+        background-color: rgb(12, 44, 12);
+    }
+
+    #submitbutton {
+        height: auto;
+        width: 45%;
+        padding: 10px 15px;
+        margin-left: 25%;
+    }
+
+    #storelogo {
+        display: none;
+    }
+
+    .login form {
+        margin-top: 23%;
+    }
+}
+
+/* Add responsiveness for smaller tablet devices*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .login {
+        width: 80%;
+        height: 60%;
+        margin-top: 5px;
+        margin-left: 13%;
+    }
+
+    .main {
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+    }
+
+    img {
+        height: 200px;
+        max-width: 80%;
+        margin-left: 9%;
+    }
+
+    body {
+        background-color: pink;
+    }
+
+    #submitbutton {
+        height: auto;
+        padding: 10px 15px;
+        margin-left: 25%;
+    }
+
+    #storelogo {
+        display: none;
+    }
+
+    .login form {
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+/*Add responsiveness for larger tablet devices*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .login {
+        height: 60%;
+        border: solid thin lightgreen;
+        margin-top: 5px;
+        background-color: white;
+        margin-left: 30%;
+        max-width: 100%;
+    }
+
+    .main {
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    img {
+        height: 200px;
+        width: 90%;
+        margin-left: 9%;
+    }
+
+    body {
+        background-color: lightseagreen;
+    }
+
+    #submitbutton {
+        height: auto;
+        width: 45%;
+        padding: 10px 15px;
+        margin-left: 30%;
+    }
+
+    #storelogo {
+        display: none;
+    }
+}
+
+/*Add responsiveness for medium devices like desktops*/
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .login {
+
+        width: 60%;
+        height: auto;
+        border: solid thin lightgreen;
+        margin-top: 5px;
+        background-color: white;
+        margin-left: 20%;
+
+    }
+
+    .main {
+        display: flow-root;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+
+    }
+
+    img {
+        height: 270px;
+        max-width: 70%;
+        margin-left: 14%;
+    }
+
+    body {
+        background-color: rgb(140, 202, 181);
+    }
+
+
+    #submitbutton {
+        height: auto;
+        width: 45%;
+        padding: 10px 15px;
+        margin-left: 30%;
+    }
+
+    #storelogo {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1500px) {
+    #submitbutton {
+        height: auto;
+        width: 45%;
+        padding: 10px 15px;
+        margin-left: 30%;
+    }
+
+    #storelogo {
+        height: auto;
+        width: 70%;
+        margin-left: 12%;
+    }
+
+}

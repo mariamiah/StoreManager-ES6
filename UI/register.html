@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>MIMIZ HOME STORE|New Employee</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/inventorystyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/cartsyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin_dashboardstyle.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="topnav-list">
+            <ul>
+                <li id="welcome"><a href="admin_dashboard.html">Welcome Maria!(Admin)</a></li>
+                <li id="admin"><a href="#">Attendant Dashboard</a></li>
+                <li id="admin"><a href="admin_dashboard.html">Administrator Dashboard</a></li>
+                <li id="logout"><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rowone">
+        <div class="secondcolumn">
+            <div class="card" id="product">
+                <div class="container">
+                    <form action="admin_dashboard.html">
+                        <div class="billing">
+                            <h3>Employee Form</h3>
+                            <input type="text" name="Employeename" placeholder="Name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="text" name="username" placeholder="User Name" required>
+                            <input type="text" name="password" placeholder="Password" required>
+                            <input type="text" name="confirm password" placeholder="Confirm Password" required>
+                            <select id="select">
+                                <option>Attendant</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
