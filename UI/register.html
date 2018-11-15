@@ -29,14 +29,16 @@
         <div class="secondcolumn">
             <div class="card" id="product">
                 <div class="container">
-                    <form action="admin_dashboard.html">
+                    <form id="registerUser" action="admin_dashboard.html">
                         <div class="billing">
+                            <div id="adminerrormessage"></div>
                             <h3>Employee Form</h3>
-                            <input type="text" name="Employeename" placeholder="Name" required>
+                            <input type="text" id="employeeName" name="Employeename" placeholder="Name" required>
                             <input type="email" id="email" name="email" placeholder="Email" required>
-                            <input type="text" name="username" placeholder="User Name" required>
-                            <input type="text" name="password" placeholder="Password" required>
-                            <input type="text" name="confirm password" placeholder="Confirm Password" required>
+                            <input type="text" id="gender" name="gender" placeholder="gender" required>
+                            <input type="text" id="userName" name="username" placeholder="User Name" required>
+                            <input type="text" id="currentPassword" name="password" placeholder="Password" required>
+                            <input type="text" id="confirmPassword" name="confirm password" placeholder="Confirm Password" required>
                             <select id="select">
                                 <option>Attendant</option>
                                 <option>Admin</option>
@@ -47,6 +49,7 @@
                 </div>
             </div>
         </div>
+        <script src="js/register.js"></script>
 </body>
 
 </html>

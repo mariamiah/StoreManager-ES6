@@ -1,7 +1,7 @@
 const url = 'https://storemanager15.herokuapp.com/api/v2/auth/login'
 let request = new Request(url)
 
-document.getElementById('loginuser').addEventListener
+document.getElementById('loginUser').addEventListener
 ('submit', login);
 
 function login(e){
