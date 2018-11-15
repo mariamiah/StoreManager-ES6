@@ -36,7 +36,7 @@ function register(e){
         if(json['message'] == 'User registered successfully'){
             console.log(json);
             document.getElementById('adminerrormessage').innerHTML=json.message;
-            window.location.assign('../index.html')
+            window.location.assign('employees.html')
         }else if(json['message']=='Invalid'){
             document.getElementById('adminerrormessage').innerHTML="Username already exists, try another";
         }else{
