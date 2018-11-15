@@ -33,7 +33,15 @@ function register(e){
         return res.json();
     })
     .then(function(json){
-        console.log(json);
-        document.getElementById('adminerrormessage').innerHTML=json.message;
+        if(json['message'] == 'User registered successfully'){
+            console.log(json);
+            document.getElementById('adminerrormessage').innerHTML=json.message;
+            window.location.assign('../index.html')
+        }else if(json['message']=='Invalid'){
+            document.getElementById('adminerrormessage').innerHTML="Username already exists, try another";
+        }else{
+            console.log(json);
+            document.getElementById('adminerrormessage').innerHTML=json.message;
+        }        
         })
 }
