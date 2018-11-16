@@ -183,6 +183,11 @@ label {
 
 /*Add responsiveness for a mobile phone device*/
 @media only screen and (min-width: 280px) and (max-width: 480px) {
+    .topnav-list li {
+        font-size: 17px;
+        padding: 30px 10px;
+        margin-right:50%;
+    }
     .login {
         width: 80%;
         height: 60%;
@@ -224,6 +229,11 @@ label {
 
 /* Add responsiveness for smaller tablet devices*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .topnav-list li {
+        font-size: 18px;
+        padding: 30px 10px;
+
+    }
     .login {
         width: 80%;
         height: 60%;
@@ -306,6 +316,11 @@ label {
 /*Add responsiveness for medium devices like desktops*/
 
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .topnav-list li {
+        font-size: 18px;
+        padding: 30px 10px;
+
+    }
     .login {
 
         width: 60%;

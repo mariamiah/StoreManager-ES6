@@ -27,9 +27,9 @@ function login(e){
             let realtoken = base64token.replace(/-/g, '+').replace(/_/g, '/');
             let decoded_token = JSON.parse(window.atob(realtoken));
             if(decoded_token['roles']=="Admin"){
-                window.location.assign('UI/admin_dashboard.html')
+                window.location.assign('UI/admin_dashboard.html');
             }else{
-                window.location.assign('UI/dashboard.html')
+                window.location.assign('UI/dashboard.html');
             }
         }else{
             console.log(json)

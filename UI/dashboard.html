@@ -16,7 +16,9 @@
     <div class="header">
         <div class="topnav-list">
             <ul>
-                <a href="dashboard.html"><li id="welcome"></li></a>
+                <a href="dashboard.html">
+                    <li id="welcome"></li>
+                </a>
                 <li id="logout"><a href="../index.html">Logout</a></li>
             </ul>
         </div>
@@ -24,103 +26,72 @@
     <div class="rowone">
         <div class="leftcolumn">
             <div class="card">
-                <div id="date"></div>
-                <div class="row">
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/blue-denim-jeans-500x500.jpg" alt="Denim Jeans">
-                            <h4>Tailored Jeans</h4>
-                            <p class="price"><strong>shs.50,000</strong></p>
-                            <p>
-                                <form action="cart.html"><button>Add to Cart</button></form>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/covert.jpg" alt="Denim Jeans">
-                            <h4>Covert Jeans</h4>
-                            <p class="price"><strong>shs.65,000</strong></p>
-                            <p>
-                                <form action="cart.html"><button>Add to Cart</button></form>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/open knee.jpg" alt="Denim Jeans">
-                            <h4>open knee jeans</h4>
-                            <p class="price"><strong>shs.50,000</strong></p>
-                            <p>
-                                <form action="cart.html"><button>Add to Cart</button></form>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/slim mom jeans.jpg" alt="Denim Jeans">
-                            <h4>Slim mom Jeans</h4>
-                            <p class="price"><strong>shs.75,000</strong></p>
-                            <p>
-                                <form action="cart.html"><button>Add to Cart</button></form>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <p><strong>Today's quote</strong></p>
-                <p><strong><I>" Denim Jeans represent democracy in fashion"</I></strong></p>
-            </div>
-            <div class="card">
-                <h3>Sales Record</h3>
+                    <input type="text" id="myInput" onkeyup="saleSearch()" placeholder="Search your sale records by product name.."/>
                 <table id="all-sales">
                     <tr>
-                        <th></th>
-                        <th>DATE</th>
-                        <th>AMOUNT</th>
-                        <th>ACTION</th>
+                        <th id="saleId">SALE ID</th>
+                        <th id="saleDate">DATE SOLD</th>
+                        <th id="productName">PRODUCT NAME</th>
+                        <th id="price">PRICE</th>
+                        <th id="quantity">QUANTITY</th>
+                        <th id="total">TOTAL</th>
+                        <th id="soldBy">SOLD BY</th>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>11/10/2018</td>
-                        <td>shs.250,000</td>
-                        <form action="salesrecord.html">
-                            <td><button>View</button></td>
-                        </form>
+                        <td>Jeans</td>
+                        <td>50000</td>
+                        <td>5</td>
+                        <td>250000</td>
+                        <td>Sandra</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>12/10/2018</td>
-                        <td>shs.230,000</td>
-                        <form action="salesrecord.html">
-                            <td><button>View</button></td>
-                        </form>
+                        <td>Skirts</td>
+                        <td>23000</td>
+                        <td>10</td>
+                        <td>230000</td>
+                        <td>Sandra</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>13/10/2018</td>
-                        <td>shs.400,000</td>
-                        <form action="salesrecord.html">
-                            <td><button>View</button></td>
-                        </form>
+                        <td>Jacket</td>
+                        <td>40000</td>
+                        <td>2</td>
+                        <td>80000</td>
+                        <td>Sandra</td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>14/10/2018</td>
-                        <td>shs.430,000</td>
-                        <form action="salesrecord.html">
-                            <td><button>View</button></td>
-                        </form>
+                        <td>shoes</td>
+                        <td>20000</td>
+                        <td>1</td>
+                        <td>20000</td>
+                        <td>Sandra</td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>15/10/2018</td>
-                        <td>shs.480,000</td>
-                        <form action="salesrecord.html">
-                            <td><button>View</button></td>
-                        </form>
+                        <td>Bag</td>
+                        <td>48000</td>
+                        <td>2</td>
+                        <td>96000</td>
+                        <td>Sandra</td>
+
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>15/10/2018</td>
+                        <td>Scarf</td>
+                        <td>10000</td>
+                        <td>1</td>
+                        <td>10000</td>
+                        <td>Sandra</td>
+
                     </tr>
 
                 </table>
@@ -134,11 +105,8 @@
         <div class="rightcolumn">
             <div class="card">
                 <form>
-                    <input type="text" placeholder="Search.." name="search" id="itemsearch">
-                    <button type="submit" id="searchbutton">Search</i></button>
-                </form>
-            </div>
-            <div class="card">
+                       <strong><div class="subsection" id="date"></div></strong>
+                    </form><br>
                 <form action="inventory.html">
                     <div class="subsection"><input type="submit" value="Product List" /></div>
                 </form>
@@ -150,25 +118,18 @@
                 <form action="about.html">
                     <div class="subsection"><input type="submit" value="About the Store" /></div>
                 </form><br>
-            </div>
-            <div class="card">
-                <h3>Profile</h3>
-                <div class="profilecard">
-                    <p>Username: &nbsp;Maria</p>
-                    <p class="title">Role:Store Attendant</p>
-                    <p>Sales Record: 15</p>
-                    <p>Address: Kampala</p>
-                    <p>Email:</p>
-                    <p><button>Edit profile details</button></p>
-                </div>
+                <form action="profile.html">
+                    <div class="subsection"><input type="submit" value="User Profile" /></div>
+                </form><br>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="footer">
         <h3>Mimiz Home Store, 2018</h3>
     </div>
-<script src="js/dashboard.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 
 </html>
