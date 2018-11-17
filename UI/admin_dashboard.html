@@ -16,7 +16,9 @@
     <div class="header">
         <div class="topnav-list">
             <ul>
-                <a href="admin_dashboard.html"><li id="welcome"></li></a>
+                <a href="admin_dashboard.html">
+                    <li id="adminWelcome"></li>
+                </a>
                 <li id="logout"><a href="../index.html">Logout</a></li>
             </ul>
         </div>
@@ -24,58 +26,7 @@
     <div class="rowone">
         <div class="leftcolumn">
             <div class="card" id="admincards">
-
-                <h5>Thursday, Oct 11, 2018</h5>
-                <div class="row">
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/blue-denim-jeans-500x500.jpg" alt="Denim Jeans">
-                            <h4>Tailored Jeans</h4>
-                            <p class="price"><strong>shs.50,000</strong></p>
-                            <p>
-                                <form action="edit_product.html"><button id="edit">Edit</button></form>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/covert.jpg" alt="Denim Jeans">
-                            <h4>Covert Jeans</h4>
-                            <p class="price"><strong>shs.65,000</strong></p>
-                            <p>
-                                <form action="edit_product.html"><button id="edit">Edit</button></form>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/open knee.jpg" alt="Denim Jeans">
-                            <h4>open knee jeans</h4>
-                            <p class="price"><strong>shs.50,000</strong></p>
-                            <p>
-                                <form action="edit_product.html"><button id="edit">Edit</button></form>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="cardone">
-                            <img src="img/slim mom jeans.jpg" alt="Denim Jeans">
-                            <h4>Slim mom Jeans</h4>
-                            <p class="price"><strong>shs.75,000</strong></p>
-                            <p>
-                                <form action="edit_product.html"><button id="edit">Edit</button></form>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <p><strong>Today's quote</strong></p>
-                <p><strong><I>" Denim Jeans represent democracy in fashion"</I></strong></p>
-            </div>
-            <div class="card" id="admincards">
-                <h3>SUMMARY REPORT</h3>
+                    <input type="text" id="myInput" onkeyup="saleSearch()" placeholder="Search your sale records by product name.."/>
                 <table id="adminsalestable">
                     <tr>
                         <th></th>
@@ -122,15 +73,6 @@
                         <td>shs.70,000</td>
                         <td>Denim Shorts</td>
                     </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>15/10/2018</td>
-                        <td>shs.1300,000</td>
-                        <td>shs.960,000</td>
-                        <td>shs.150,000</td>
-                        <td>shs.50,000</td>
-                        <td>Denim Shorts</td>
-                    </tr>
 
                 </table>
                 <div class="table-footer">
@@ -143,11 +85,10 @@
         <div class="rightcolumn">
             <div class="card" id="admincards">
                 <form>
-                    <input type="text" placeholder="Search.." name="search" id="itemsearch">
-                    <button type="submit" id="searchbutton">Search</i></button>
-                </form>
-            </div>
-            <div class="card" id="admincards">
+                    <strong>
+                        <div class="subsection" id="date"></div>
+                    </strong>
+                </form><br>
                 <form action="admin_productlist.html">
                     <div class="subsection"><input type="submit" value="Product List" /></div>
                 </form>
@@ -170,7 +111,7 @@
     <div class="footer">
         <h3>Mimiz Home Store, 2018</h3>
     </div>
-<script src="js/admin_dashboard.js"></script>
+    <script src="js/admin_dashboard.js"></script>
 </body>
 
 </html>

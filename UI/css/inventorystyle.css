@@ -8,12 +8,21 @@
     padding: 10px 30px 12px 20px;
     border: 1px solid #ddd;
 }
-
+/* Style the inventory */
+#attendantinventory{
+    float:left;
+    width:76.5%;
+}
 #inventory {
     border-collapse: collapse;
     width: 100%;
     border: 1px solid #ddd;
-    font-size: 18px;
+    font-size: 14px;
+}
+#productmsg{
+    color:red;
+    text-align:center;
+    margin-top:1%;
 }
 
 #inventory th,
@@ -125,7 +134,7 @@
     #inventory th,
     #inventory td {
         text-align: left;
-        padding: 1px;
+        padding: 5px;
     }
 
     #inventory tr {
