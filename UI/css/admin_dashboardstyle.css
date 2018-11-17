@@ -40,16 +40,20 @@
     padding: 10px 10px 10px 10px;
     margin-bottom: 10px;
 }
+/* Style the return messages for fetch API category */
+#newCategoryMessage{
+    color:red;
+    text-align:center;
+}
 
 /* Style the choose file button */
 #upload {
     margin-bottom: 10px;
 }
 
-/* Style the text area containing product description*/
-textarea {
-    width: 60%;
-    height: 70px;
+#categorycolumn{
+    float:left;
+    width:76.5%;
 }
 
 /* Style the edit product button on the administrator dashboard */
