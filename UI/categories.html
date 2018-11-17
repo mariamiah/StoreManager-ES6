@@ -7,24 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
     <title>MIMIZ HOME STORE|Categories</title>
     <link rel="stylesheet" type="text/css" href="css/dashboard_style.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin_dashboardstyle.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/inventorystyle.css" />
 </head>
 
-<body>
+<body id="allcategories">
     <div class="header">
         <div class="topnav-list">
             <ul>
-                <li id="welcome"><a href="admin_dashboard.html">Welcome Maria!(Admin)</a></li>
-                <li id="admin"><a href="#">Attendant Dashboard</a></li>
-                <li id="admin"><a href="admin_dashboard.html">Administrator Dashboard</a></li>
+                <a href="admin_dashboard.html"><li id="adminWelcome"></li></a>
                 <li id="logout"><a href="../index.html">Logout</a></li>
             </ul>
         </div>
     </div>
     <div class="rowone">
-        <div class="leftcolumn">
+        <div class="leftcolumn" id="categorycolumn">
             <div class="card">
                 <input type="text" id="myInput" placeholder="Search Categories..">
                 <table id="inventory">
@@ -32,6 +31,7 @@
                         <th>Category#</th>
                         <th>Category</th>
                         <th>Category List</th>
+                        <th>Date Added </th>
                         <th>Action</th>
                         <th></th>
                     </tr>
@@ -122,13 +122,17 @@
                 </table>
                 <div class="table-footer">
                     <button id="prev">
-                        << Previous</button>&nbsp; <button id="add">Add New Category
-                    </button>
+                        << Previous</button>&nbsp;
+                    <form action= "add_category.html">
+                            <button id="add">Add New Category
+                                </button>
+                    </form>
                     <button id="nextone">Next >></button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/admin_dashboard.js"></script>
 </body>
 
 </html>
