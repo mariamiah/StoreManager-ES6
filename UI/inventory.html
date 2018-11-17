@@ -12,25 +12,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body>
+<body id="allproducts">
     <div class="header">
         <div class="topnav-list">
             <ul>
-                <li id="welcome"><a href="dashboard.html">Welcome Maria!(Attendant)</a></li>
-                <li id="admin"><a href="dashboard.html">Attendant Dashboard</a></li>
-                <li id="admin"><a href="#">Administrator Dashboard</a></li>
+                <a href="dashboard.html"><li id="welcome"></li></a>
                 <li id="logout"><a href="../index.html">Logout</a></li>
             </ul>
         </div>
     </div>
     <div class="rowone">
-        <div class="leftcolumn">
+        <div class="leftcolumn" id="attendantinventory">
             <div class="card">
-                <input type="text" id="myInput" placeholder="Search for products..">
+                <input type="text" id="myInput" onkeyup="productSearch()" placeholder="Search for products..">
+                <strong><div id="productmsg"></div></strong>
                 <table id="inventory">
                     <tr>
                         <th>Item#</th>
-                        <th>Item</th>
                         <th>Product Code</th>
                         <th>Product Name</th>
                         <th>Category</th>
@@ -41,80 +39,74 @@
                         <th>Add to Cart</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td><img src="img/classichooded.jpg" alt="Sweatshirts"></td>
-                        <td>SS0045</td>
-                        <td>Classic Hooded Sweat Shirt</td>
-                        <td>Sweatshirts</td>
-                        <td>L</td>
-                        <td>Blue</td>
-                        <td>75,000</td>
-                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><input type="checkbox" name="checkbox" /></td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td><img src="img/covertjeans.jpg" alt="covertjeans"></td>
-                        <td>DJ0145</td>
-                        <td>Covert Jeans</td>
-                        <td>Jeans</td>
-                        <td>S</td>
-                        <td>Blue</td>
-                        <td>75,000</td>
-                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><input type="checkbox" name="checkbox" /></td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td><img src="img/larashorts.jpg" alt="Shorts"></td>
-                        <td>LS0065</td>
-                        <td>Lara Shorts</td>
-                        <td>Shorts</td>
-                        <td>XL</td>
-                        <td>gray</td>
-                        <td>85,000</td>
-                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><input type="checkbox" name="checkbox" /></td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td><img src="img/teeshirt.jpg" alt="Tees"></td>
-                        <td>TS0090</td>
-                        <td>Craig Tee</td>
-                        <td>Tees</td>
-                        <td>L</td>
-                        <td>Black</td>
-                        <td>45,000</td>
-                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><input type="checkbox" name="checkbox" /></td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td><img src="img/necksweater.jpg" alt="Neck Sweater"></td>
-                        <td>NS0053</td>
-                        <td>Robin Round Neck Sweater</td>
-                        <td>Sweatshirts</td>
-                        <td>M</td>
-                        <td>Black</td>
-                        <td>65,000</td>
-                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><input type="checkbox" name="checkbox" /></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td><img src="img/riderjacket.jpg" alt="Rider Jacket"></td>
-                        <td>JR0043</td>
-                        <td>Rider Jacket</td>
-                        <td>Jackets</td>
-                        <td>M</td>
-                        <td>Navy Blue</td>
-                        <td>95,000</td>
-                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td><input type="checkbox" name="checkbox" /></td>
                     </tr>
 
                 </table>
-                <div class="table-footer">
+                <div class="table-footer" id="tableFooter">
                     <button id="prev">
                         << Previous</button>&nbsp; <form action="cart.html"><button id="add">Add to cart</button></form>
                             <button id="nextone">Next >></button>
@@ -123,6 +115,7 @@
         </div>
     </div>
     <script src="js/inventory.js"></script>
+    <script src = "js/dashboard.js"></script>
 </body>
 
 </html>

@@ -7,7 +7,10 @@
     padding: 5px 25px;
     background: linear-gradient(lightgrey, whitesmoke);
 }
-
+/* Style the admin welcome nav list item*/
+#adminWelcome{
+    float:left;
+}
 /* Style the employees table footer */
 #footer {
     width: 100%;
@@ -16,12 +19,14 @@
 .card input[type="date"] {
     width: 30%;
 }
-
 #datelabel {
     color: green;
     margin-left: 3%;
 }
-
+#productmessage{
+    text-align:center;
+    color:red;
+}
 /* Style the add new product form */
 #product {
     width: 70%;

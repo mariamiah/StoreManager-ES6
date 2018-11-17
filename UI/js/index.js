@@ -36,4 +36,5 @@ function login(e){
             document.getElementById('errmessage').innerHTML=json.message;
         }
     })
+    .catch(err => console.log(err));
 }

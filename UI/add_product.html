@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>MIMIZ HOME STORE|Edit Product</title>
+    <link rel="stylesheet" type="text/css" href="css/dashboard_style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/inventorystyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/cartsyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin_dashboardstyle.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="topnav-list">
+            <ul>
+                <a href="admin_dashboard.html"><li id="adminWelcome"></li></a>
+                <li id="logout"><a href="../index.html">Logout</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="rowone">
+        <div class="secondcolumn">
+            <div class="card" id="product">
+                <div class="container">
+                    <form action="admin_productlist.html" id="addProductForm">
+                        <div class="billing">
+                            <h3>Product Form</h3>
+                            <strong><div id="productmessage"></div></strong>
+                            <input type="text" id="fname" name="productname" placeholder="Enter product name" required>
+                            <select id="select" required >
+                                <option>Choose category</option>
+                                <option>Sweatshirts</option>
+                                <option>Jeans</option>
+                                <option>Shorts</option>
+                                <option>Tees</option>
+                                <option>Jackets</option>
+                                <option>Trousers</option>
+                                <option>Skirts</option>
+                                <option>Suits</option>
+                                <option>Dresses</option>
+                            </select>
+                            <input type="text" id="ccnum" name="price" placeholder="Enter the price" required/>
+                            <input type="text" id="productQuantity" name="quantity" placeholder="Enter the product quantity" required/>
+                        </div>
+
+                        <input type="submit" id="productSubmit" value="Submit" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/admin_dashboard.js"></script>
+        <script src="js/addProduct.js"></script>
+</body>
+
+</html>
