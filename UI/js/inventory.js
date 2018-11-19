@@ -6,7 +6,7 @@ function productSearch(){
     let tr = table.getElementsByTagName("tr");
     let i;
     for(i=0; i<tr.length; i++){
-        td = tr[i].getElementsByTagName('td')[2];
+        td = tr[i].getElementsByTagName('td')[1];
         if (td){
             if (td.innerHTML.toUpperCase().indexOf(searchFilter)>-1){
                 tr[i].style.display = "";
@@ -21,10 +21,6 @@ function productSearch(){
 // Fetch all products from the API
 function productTemplate(data){
     return `
-                <table id="inventory">
-                <th>Product_id</th><th>Product Name</th><th>Price</th>
-                <th>Product Code</th><th>Stock Quantity</th><th>Category</th>
-                <th>Date Added</th><th>Action</th>
                 <tr>
                 <td>${data.product_id}</td>
                 <td>${data.product_name}</td>
@@ -35,7 +31,7 @@ function productTemplate(data){
                 <td>${data.date_added}</td>
                 <td><input type="checkbox" name="checkbox" /></td>
                 </tr>
-                </table>
+
                 `
 }
 function fetchProducts(){
@@ -56,7 +52,12 @@ function fetchProducts(){
         }else{
             document.getElementById('productInventory').innerHTML = `
             <h4 class="productHeading"> Available Products(${json.Products.length})</h4>
-            ${json.Products.map(productTemplate).join("")}
+            <table id="inventory">
+            <th>Product_id</th><th>Product Name</th><th>Price</th>
+            <th>Product Code</th><th>Stock Quantity</th><th>Category</th>
+            <th>Date Added</th><th>Action</th>
+            ${json.Products.map(productTemplate).join("")}   
+            </table>
             `
             }
             
