@@ -12,11 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body id="allproducts">
+<body onload="fetchProducts();">
     <div class="header">
         <div class="topnav-list">
             <ul>
-                <a href="dashboard.html"><li id="welcome"></li></a>
+                <a href="dashboard.html">
+                    <li id="welcome"></li>
+                </a>
                 <li id="logout"><a href="../index.html">Logout</a></li>
             </ul>
         </div>
@@ -25,87 +27,11 @@
         <div class="leftcolumn" id="attendantinventory">
             <div class="card">
                 <input type="text" id="myInput" onkeyup="productSearch()" placeholder="Search for products..">
-                <strong><div id="productmsg"></div></strong>
-                <table id="inventory">
-                    <tr>
-                        <th>Item#</th>
-                        <th>Product Code</th>
-                        <th>Product Name</th>
-                        <th>Category</th>
-                        <th>Size</th>
-                        <th>Color</th>
-                        <th>Price</th>
-                        <th>On hand Qty(pcs)</th>
-                        <th>Add to Cart</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="checkbox" name="checkbox" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="checkbox" name="checkbox" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="checkbox" name="checkbox" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="checkbox" name="checkbox" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="checkbox" name="checkbox" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><input type="checkbox" name="checkbox" /></td>
-                    </tr>
-
-                </table>
+                <strong>
+                    <div id="productmsg"></div>
+                </strong>
+                <p id="productInventory">
+                </p>
                 <div class="table-footer" id="tableFooter">
                     <button id="prev">
                         << Previous</button>&nbsp; <form action="cart.html"><button id="add">Add to cart</button></form>
@@ -115,7 +41,7 @@
         </div>
     </div>
     <script src="js/inventory.js"></script>
-    <script src = "js/dashboard.js"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 
 </html>

@@ -28,8 +28,8 @@ function logout(e){
 })
 }
 // Implement auto current date
-let Today = new Date();
-document.getElementById('date').innerHTML=Today;
+let today = new Date();
+document.getElementById('date').innerHTML = today;
 
 // Search through sale records
 function saleSearch(){
