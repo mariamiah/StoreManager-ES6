@@ -24,11 +24,14 @@
     text-align:center;
     margin-top:1%;
 }
-
+.productHeading{
+    color:green;
+    text-align: center;
+}
 #inventory th,
 #inventory td {
     text-align: left;
-    padding: 12px;
+    padding: 4px;
 }
 
 #inventory tr {
@@ -54,12 +57,6 @@
     background: linear-gradient(lightgrey, whitesmoke);
 }
 
-
-#inventory img {
-    width: 90px;
-    height: 80px;
-
-}
 
 /* Style the total cell in the sales record table */
 #total {
