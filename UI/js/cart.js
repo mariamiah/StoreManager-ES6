@@ -35,13 +35,12 @@ function addItem(){
             Quantity.push(parseInt(document.getElementById('productQuantity').value));
             productPrice.push(parseInt(document.getElementById('UnitPrice').value));
             let justAddedPrice = productPrice.slice(-1)
-            if(justAddedPrice!=100){
-                console.log('hehe wrong price')
+            if(justAddedPrice != 100){
+                console.log('Enter the correct Price')
             }else{
                 displayProductTable()
             }
         }else{
-            console.log('nonono')
             document.getElementById('cartMessage').innerHTML = json.message;
         }
     })
