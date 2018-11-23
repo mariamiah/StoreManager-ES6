@@ -23,6 +23,7 @@ function logout(e){
     .then(function(json){
     console.log(json)
     if(json.message=="log out successful"){
+        localStorage.removeItem('token');
         window.location.replace('../index.html');
     }
 })

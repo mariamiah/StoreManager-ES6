@@ -79,12 +79,25 @@
 #nextone {
     color: green;
     float: right;
-    margin-top: 1px;
+    margin-top: 2px;
     margin-right: 30px;
-    padding: 5px 25px;
+    padding: 15px 80px;
     background: linear-gradient(lightgrey, whitesmoke);
 }
-
+#goToCart {
+    color: blue;
+    margin-top:-5%;
+    margin-left:25%;
+    padding: 15px 80px;
+    background: linear-gradient(lightgrey, whitesmoke);
+}
+#prev {
+    color: green;
+    float: left;
+    margin-top: 2px;
+    padding: 15px 80px;
+    background: linear-gradient(lightgrey, whitesmoke);
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
 
@@ -116,6 +129,15 @@
 
     #item {
         display: none;
+    }
+    #nextone {
+        padding: 15px 10px;
+    }
+    #goToCart {
+        padding: 15px 10px;
+    }
+    #prev {
+        padding: 15px 10px;
     }
 }
 

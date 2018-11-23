@@ -97,6 +97,10 @@
     color:red;
     text-align:center;
 }
+#nextone{
+    width:20%;
+    margin-top:45%;
+}
 
 /*Add responsiveness for a mobile phone device*/
 @media only screen and (min-width: 280px) and (max-width: 480px) {

@@ -16,7 +16,36 @@
     width: 100%;
 
 }
-
+#productName{
+    width:20%;
+    margin-left:10%;
+}
+#productQuantity{
+    width:20%;
+}
+#UnitPrice{
+    width:20%;
+}
+#cartMessage{
+    color:red;
+    margin-left:31%;
+}
+#checkProductList{
+    background-color:rgb(63, 63, 83);
+    color:white;
+    width:10%;
+    height:40%;
+    margin-left:35%;
+    border-radius:20%;
+}
+#addtocart{
+    width:20%;
+    background-color:green;
+    margin-left:30%;
+}
+#productCart{
+    width:98%;
+}
 /* Style the table headers and content */
 #checkout th,
 #checkout td {
@@ -33,6 +62,13 @@
 
 /* Style the text boxes */
 .billing input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.billing input[type=number] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
@@ -79,4 +115,22 @@
 
 #discover {
     color: orange;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .billing{
+        width:75%;
+    }
+    #checkProductList{
+        width:30%;
+        margin-left:10%;
+    }
+    #addtocart{
+        width:30%;
+        margin-left:10%;
+    }
+    #cartMessage{
+        margin-left:0%;
+    }
+   
 }

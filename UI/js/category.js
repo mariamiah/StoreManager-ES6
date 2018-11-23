@@ -26,3 +26,5 @@ function addCategory(e){
     })
 }
 
+// Fetch API to fetch all available categories
+
