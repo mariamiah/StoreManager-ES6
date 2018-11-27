@@ -1,4 +1,4 @@
-const url = "http://localhost:5000/api/v2/auth/signup"
+const url = "https://storemanager15.herokuapp.com/api/v2/auth/signup"
 
 document.getElementById('registerUser').addEventListener
 ('submit', register);

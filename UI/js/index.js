@@ -1,4 +1,4 @@
-const url = 'http://localhost:5000/api/v2/auth/login'
+const url = 'https://storemanager15.herokuapp.com/api/v2/auth/login'
 let request = new Request(url)
 
 document.getElementById('loginUser').addEventListener
