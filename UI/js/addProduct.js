@@ -8,7 +8,7 @@ function addProduct(e){
     let categoryName = document.getElementById('select').value;
     let price = document.getElementById('ccnum').value;
     let quantity = document.getElementById('productQuantity').value;
-    fetch("http://localhost:5000/api/v2/products",{
+    fetch("https://storemanager15.herokuapp.com/api/v2/products",{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

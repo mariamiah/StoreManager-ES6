@@ -40,7 +40,7 @@ function saleTemplate(data){
 }
 
 function fetchSales(){
-    const uri = "http://localhost:5000/api/v2/sales"
+    const uri = "https://storemanager15.herokuapp.com/api/v2/sales"
     fetch(uri, {
         headers: {
             'Content-Type':'application/json',
