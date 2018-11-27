@@ -97,6 +97,22 @@
     color:red;
     text-align:center;
 }
+#nextone{
+    width:20%;
+    margin-top:45%;
+}
+.saleHeading{
+    color:green;
+    text-align:center;
+}
+.userHeading{
+    color:green;
+    text-align:center;
+}
+#adminsalestable {
+    width: 100%;
+    font-size:14px;
+}
 
 /*Add responsiveness for a mobile phone device*/
 @media only screen and (min-width: 280px) and (max-width: 480px) {

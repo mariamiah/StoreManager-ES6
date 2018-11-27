@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body onload="fetchProducts();">
+<body onload="fetchProducts()">
     <div class="header">
         <div class="topnav-list">
             <ul>
@@ -34,14 +34,18 @@
                 </p>
                 <div class="table-footer" id="tableFooter">
                     <button id="prev">
-                        << Previous</button>&nbsp; <form action="cart.html"><button id="add">Add to cart</button></form>
+                        << Previous</button>&nbsp;
                             <button id="nextone">Next >></button>
+                            <form action="cart.html">
+                                <input type="submit" value="Go to Cart" id="goToCart"/>
+                            </form>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/inventory.js"></script>
     <script src="js/dashboard.js"></script>
+
 </body>
 
 </html>

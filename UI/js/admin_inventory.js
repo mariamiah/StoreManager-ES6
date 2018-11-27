@@ -17,8 +17,7 @@ function productSearch(){
         }
     }
 }
-
-// Fetch all products from the API
+// Fetch product list for administrator view
 function productTemplate(data){
     return `
                 <tr>
@@ -29,12 +28,13 @@ function productTemplate(data){
                 <td>${data.product_quantity}</td>
                 <td>${data.category_name}</td>
                 <td>${data.date_added}</td>
+                <td><input type="submit" value="Edit"></td>
+                <td><input type="submit" value="Delete"></td>
                 </tr>
 
                 `
 }
-
-function fetchProducts(){
+function fetchAdminProducts(){
     const uri = "http://localhost:5000/api/v2/products"
     fetch(uri, {
         headers: {
@@ -48,32 +48,22 @@ function fetchProducts(){
     .then(json => {
         console.log(json);
         if(json.Products.length == 0){
-            document.getElementById('productmsg').innerHTML = "No products at the moment";
+            document.getElementById('adminprodmsg').innerHTML = "No products at the moment";
         }else{
-            document.getElementById('productInventory').innerHTML = `
+            document.getElementById('adminproductInventory').innerHTML = `
             <h4 class="productHeading"> Available Products(${json.Products.length})</h4>
             <table id="inventory">
             <th>Product_id</th><th>Product Name</th><th>Price</th>
             <th>Product Code</th><th>Stock Quantity</th><th>Category</th>
-            <th>Date Added</th>
-            ${json.Products.map(productTemplate).join(" ")}   
+            <th>Date Added</th><th>Modify Product</th><th></th>
+            ${json.Products.map(productTemplate).join("")}   
             </table>
             `
-            // Make key value pairs for price and product
-            var newtable = document.getElementById('inventory')
-            var newrow = newtable.getElementsByTagName('tr');
-            
-            for(var i=1; i< newrow.length; i++){
-                var specificrow = newrow[i]
-                var prodName = specificrow.getElementsByTagName('td')[1].innerHTML;
-                var price = specificrow.getElementsByTagName('td')[2].innerHTML;
-                console.log(prodName)
-                console.log(price)
-
-            }
-           
             }
             
          })
     .catch((err) => console.log(err))
+
     }
+
+

@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/inventorystyle.css" />
 </head>
 
-<body>
+<body onload="fetchAdminProducts()">
     <div class="header">
         <div class="topnav-list">
             <ul>
@@ -26,107 +26,9 @@
     <div class="rowone">
         <div class="leftcolumn">
             <div class="card" id="adminProductCard">
-                <input type="text" id="myInput" placeholder="Search for products..">
-                <table id="inventory">
-                    <tr>
-                        <th>Item#</th>
-                        <th>Product Code</th>
-                        <th>Product Name</th>
-                        <th>Category</th>
-                        <th>Size</th>
-                        <th>Color</th>
-                        <th>Price</th>
-                        <th>On hand Qty(pcs)</th>
-                        <th>Action</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>SS0045</td>
-                        <td>Classic Hooded Sweat Shirt</td>
-                        <td>Sweatshirts</td>
-                        <td>L</td>
-                        <td>Blue</td>
-                        <td>75,000</td>
-                        <td>4</td>
-                        <form action="edit_product.html">
-                            <td><input type="submit" value="Edit"></td>
-                        </form>
-                        <td><input type="submit" value="Delete"></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>DJ0145</td>
-                        <td>Covert Jeans</td>
-                        <td>Jeans</td>
-                        <td>S</td>
-                        <td>Blue</td>
-                        <td>75,000</td>
-                        <td>2</td>
-                        <form action="edit_product.html">
-                            <td><input type="submit" value="Edit"></td>
-                        </form>
-                        <td><input type="submit" value="Delete"></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>LS0065</td>
-                        <td>Lara Shorts</td>
-                        <td>Shorts</td>
-                        <td>XL</td>
-                        <td>gray</td>
-                        <td>85,000</td>
-                        <td>6</td>
-                        <form action="edit_product.html">
-                            <td><input type="submit" value="Edit"></td>
-                        </form>
-
-                        <td><input type="submit" value="Delete"></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>TS0090</td>
-                        <td>Craig Tee</td>
-                        <td>Tees</td>
-                        <td>L</td>
-                        <td>Black</td>
-                        <td>45,000</td>
-                        <td>9</td>
-                        <form action="edit_product.html">
-                            <td><input type="submit" value="Edit"></td>
-                        </form>
-                        <td><input type="submit" value="Delete"></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>NS0053</td>
-                        <td>Robin Round Neck Sweater</td>
-                        <td>Sweatshirts</td>
-                        <td>M</td>
-                        <td>Black</td>
-                        <td>65,000</td>
-                        <td>7</td>
-                        <form action="edit_product.html">
-                            <td><input type="submit" value="Edit"></td>
-                        </form>
-                        <td><input type="submit" value="Delete"></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>JR0043</td>
-                        <td>Rider Jacket</td>
-                        <td>Jackets</td>
-                        <td>M</td>
-                        <td>Navy Blue</td>
-                        <td>95,000</td>
-                        <td>1</td>
-                        <form action="edit_product.html">
-                            <td><input type="submit" value="Edit"></td>
-                        </form>
-                        <td><input type="submit" value="Delete"></td>
-                    </tr>
-
-                </table>
+                <input type="text" id="myInput" onkeyup="productSearch()" placeholder="Search for products..">
+                <div id="adminprodmsg"></div>
+                <p id="adminproductInventory"></p>
                 <div class="table-footer">
                     <button id="prev">
                         << Previous</button>&nbsp; <form action="add_product.html"><button id="add">Add New Product</button></form>
@@ -136,6 +38,7 @@
         </div>
     </div>
     <script src="js/admin_dashboard.js"></script>
+    <script src="js/admin_inventory.js"></script>
 </body>
 
 </html>

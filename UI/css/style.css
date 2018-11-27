@@ -40,7 +40,9 @@ body {
 #logout{
     float: right;
 }
-
+#adminWelcome{
+    float:left;
+}
 /* Change the color of links on hover */
 .topnav-list a:hover {
 
