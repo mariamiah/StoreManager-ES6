@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
+<body onload="fetchSales()">
     <div class="header">
         <div class="topnav-list">
             <ul>
@@ -27,54 +27,8 @@
         <div class="leftcolumn">
             <div class="card" id="admincards">
                     <input type="text" id="myInput" onkeyup="saleSearch()" placeholder="Search your sale record per Attendant.."/>
-                <table id="adminsalestable">
-                    <tr>
-                        <th></th>
-                        <th>DATE</th>
-                        <th>TOTAL SALES</th>
-                        <th>EXPENSES</th>
-                        <th>PROFITS</th>
-                        <th>LOSSES</th>
-                        <th>BEST SELLER</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>11/10/2018</td>
-                        <td>shs.707,000</td>
-                        <td>shs.300,000</td>
-                        <td>shs.397,000</td>
-                        <td>20,0000</td>
-                        <td>Covert Jeans</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>12/10/2018</td>
-                        <td>shs.990,000</td>
-                        <td>shs.320,000</td>
-                        <td>shs.517,000</td>
-                        <td>shs.300,000</td>
-                        <td>Covert Jeans</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>13/10/2018</td>
-                        <td>shs.1,000,000</td>
-                        <td>shs.560,000</td>
-                        <td>shs.200,000</td>
-                        <td>shs.50,000</td>
-                        <td>Sleeve T-shirt</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>14/10/2018</td>
-                        <td>shs.930,000</td>
-                        <td>shs.560,000</td>
-                        <td>shs.100,000</td>
-                        <td>shs.70,000</td>
-                        <td>Denim Shorts</td>
-                    </tr>
-
-                </table>
+                <p id="salemsg"></p>
+                <div id="salesTable"></div>
                 <div class="table-footer">
                     <button id="prev">
                         << Previous</button>&nbsp; <button id="next">Next >>

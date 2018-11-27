@@ -4,7 +4,7 @@ document.getElementById('addCategoryForm').addEventListener('submit', addCategor
 function addCategory(e){
     e.preventDefault()
     //Fetch API to add a new category
-    const categoryAPI = "https://storemanager15.herokuapp.com/api/v2/categories"
+    const categoryAPI = "http://localhost:5000/api/v2/categories"
     let categoryName = document.getElementById('categoryName').value;
     fetch(categoryAPI, {
         method: 'POST',

@@ -35,7 +35,7 @@ function productTemplate(data){
                 `
 }
 function fetchAdminProducts(){
-    const uri = "https://storemanager15.herokuapp.com/api/v2/products"
+    const uri = "http://localhost:5000/api/v2/products"
     fetch(uri, {
         headers: {
             'Content-Type':'application/json',

@@ -2,7 +2,7 @@ const current_username = localStorage.getItem('username')
 document.getElementById('welcome').innerHTML = "Welcome " + current_username+"!"+ "(Attendant)";
 
 // Implement log out functionality
-const url = 'https://storemanager15.herokuapp.com/api/v2/auth/logout'
+const url = 'http://localhost:5000/api/v2/auth/logout'
 const current_token = localStorage.getItem('token')
 document.getElementById('logout').addEventListener
 ('click', logout);

@@ -19,7 +19,7 @@ function displayProductTable(){
 function addItem(){
     var productName = document.getElementById('productName').value;
     var productQuantity = document.getElementById('productQuantity').value;
-    fetch("https://storemanager15.herokuapp.com/api/v2/sales", {
+    fetch("http://localhost:5000/api/v2/sales", {
         method:'POST',
         headers: {
             'Accept': 'application/json',
@@ -44,9 +44,6 @@ function addItem(){
             document.getElementById('cartMessage').innerHTML = json.message;
         }
     })
-    
-
-
 }
 
 function delProduct(a){
