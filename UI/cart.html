@@ -25,45 +25,29 @@
         </div>
     </div>
     <div class="rowone">
-        <div class='card'>
-            <strong><p id="cartMessage"></p></strong>
-                <div class="billing">
-                    <form>
-                    <input type="text" id="productName" name="ProductName" placeholder="Product Name">
-                    <input type="number" id="productQuantity" name="Quantity" placeholder="Quantity">
-                    <input type="number" id="UnitPrice" name="UnitPrice" placeholder="Unit Price"></form>
-                    <input type="submit" value="Add Item to Cart" class="btn" id="addtocart" onclick="addItem()">
-                   <form action ="inventory.html">
-                       <input type = "submit" value="View Product List" id="checkProductList" />
-                   </form>
-                    </div>
-                </div>  
-    </div>
-    <div id="productCart"></div>
-    <div class="secondcolumn">
-        <div class="card">
-            <div class="container">
-                <form action="dashboard.html">
-                    <div class="billing">
-                        <h3>Customer Details</h3>
-                        <input type="text" id="fname" name="firstname" placeholder="Name">
-                        <input type="text" id="email" name="email" placeholder="name@mail.com">
-                        <div class="icon-container">
-                            <i class="fa fa-cc-visa" id="visa"></i>
-                            <i class="fa fa-cc-amex" id="amex"></i>
-                            <i class="fa fa-cc-mastercard" id="mastercard"></i>
-                            <i class="fa fa-cc-discover" id="discover"></i>
+        <div class="secondcolumn">
+            <div class="card">
+                <div class="container">
+                    <form action="dashboard.html">
+                        <div class="billing">
+                            <h3>Customer Details</h3>
+                            <input type="text" id="fname" name="firstname" placeholder="Name">
+                            <input type="text" id="email" name="email" placeholder="name@mail.com">
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" id="visa"></i>
+                                <i class="fa fa-cc-amex" id="amex"></i>
+                                <i class="fa fa-cc-mastercard" id="mastercard"></i>
+                                <i class="fa fa-cc-discover" id="discover"></i>
+                            </div>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="card number">
                         </div>
-                        <input type="text" id="ccnum" name="cardnumber" placeholder="card number">
-                    </div>
-
-                    <input type="submit" value="Continue to checkout" class="btn">
-                </form>
+                        <input type="submit" value="Continue to checkout" class="btn" id="checkoutbtn">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/dashboard.js"></script>
-    <script src="js/cart.js"></script>
+        <script src="js/dashboard.js"></script>
+        <script src="js/cart.js"></script>
 </body>
 
 </html>
