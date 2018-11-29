@@ -27,24 +27,33 @@
         <div class="leftcolumn" id="attendantinventory">
             <div class="card">
                 <input type="text" id="myInput" onkeyup="productSearch()" placeholder="Search for products..">
-                <strong>
-                    <div id="productmsg"></div>
-                </strong>
                 <p id="productInventory">
                 </p>
                 <div class="table-footer" id="tableFooter">
                     <button id="prev">
-                        << Previous</button>&nbsp;
-                            <button id="nextone">Next >></button>
-                            <form action="cart.html">
-                                <input type="submit" value="Go to Cart" id="goToCart"/>
-                            </form>
+                        << Previous</button>&nbsp; <button id="nextone">Next >>
+                    </button>
                 </div>
+                    <div class="billing">
+                            <strong>
+                                <p id="cartMessage"></p>
+                            </strong>
+                            <form>
+                                <input type="text" id="productName" name="ProductName" placeholder="Product Name">
+                                <input type="number" id="productQuantity" name="Quantity" placeholder="Quantity">
+                                <input type="number" id="UnitPrice" name="UnitPrice" placeholder="Unit Price"></form>
+                            <input type="submit" value="Add Item to Cart" class="btn" id="addtocart" onclick="addItem()">
+                        </div>
+                        <strong>
+                            <div id="productmsg"></div>
+                        </strong>
+                            <div id="productCart"></div>
             </div>
         </div>
     </div>
     <script src="js/inventory.js"></script>
     <script src="js/dashboard.js"></script>
+    <script src="js/cart.js"></script>
 
 </body>
 
