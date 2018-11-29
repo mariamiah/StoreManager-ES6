@@ -39,14 +39,15 @@
                                 <p id="cartMessage"></p>
                             </strong>
                             <form>
-                                <input type="text" id="productName" name="ProductName" placeholder="Product Name">
-                                <input type="number" id="productQuantity" name="Quantity" placeholder="Quantity">
-                                <input type="number" id="UnitPrice" name="UnitPrice" placeholder="Unit Price"></form>
+                                <input type="text" id="productName" name="ProductName" placeholder="Product Name" required>
+                                <input type="number" id="productQuantity" name="Quantity" placeholder="Quantity" required>
+                                <input type="number" id="UnitPrice" name="UnitPrice" placeholder="Unit Price" required></form>
                             <input type="submit" value="Add Item to Cart" class="btn" id="addtocart" onclick="addItem()">
                         </div>
                         <strong>
                             <div id="productmsg"></div>
                         </strong>
+                        <strong><div id="salemsg"></div></strong>
                             <div id="productCart"></div>
             </div>
         </div>

@@ -158,6 +158,10 @@
     width:100%;
     padding:8px;
 }
+#salemsg{
+    color:red;
+    text-align:center;
+}
 /* Style the text boxes */
 .billing input[type=text] {
     width: 10%;

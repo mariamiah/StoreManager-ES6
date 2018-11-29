@@ -95,9 +95,13 @@ function addItem(){
         let specificrow = rows[i]
         let productname = specificrow.getElementsByTagName('td')[1].innerHTML;
         productnameArray.push(productname)
-    }
+    }   
         if(productnameArray.includes(productName)== false){
             document.getElementById('cartMessage').innerHTML= "Enter a product from the above list";
+        }else if (productQuantity == ""){
+            document.getElementById('cartMessage').innerHTML="Quantity cannot be blank"
+        }else if (price == ""){
+            document.getElementById('cartMessage').innerHTML= "Price cannot be blank"
         }else{
             productNames.push(productName);
             productPrice.push(price);
@@ -114,13 +118,12 @@ function addItem(){
     
 }
 
-
 // Add checkout functionality
 function checkout(){
     var checkoutTable = document.getElementById('checkouttable');
     var checkoutRows = checkoutTable.getElementsByTagName('tr');
     var i;
-    for(i=1; i< checkoutRows.length; i++){
+    for(i=1; i< checkoutRows.length-2; i++){
         var singlerow =checkoutRows[i]
         var CartProduct = singlerow.getElementsByTagName('td')[0].innerHTML;
         var CartPrice = singlerow.getElementsByTagName('td')[2].innerHTML;
@@ -131,30 +134,31 @@ function checkout(){
                 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('token')
-        },
-        body: JSON.stringify({product_quantity: CartQuantity,
-                              product_name: CartProduct
-          })
-          .then((res)=> {
-            return res.json();
-        })
-        .then(function(json){
-            if(json['message'] == 'Product added successfully'){
-                console.log(json);
-                document.getElementById('adminerrormessage').innerHTML=json.message;
-                window.location.assign('employees.html')
-            }else if(json['message']=='Invalid'){
-                document.getElementById('adminerrormessage').innerHTML="Username already exists, try another";
-            }else{
-                console.log(json);
-                document.getElementById('adminerrormessage').innerHTML=json.message;
-            }        
-            })      
-})
-        
-    }
+            },
+            body: JSON.stringify({product_quantity: CartQuantity,
+                                  product_name : CartProduct,
+                                  price:  CartPrice
+                                })
+            })
+            .then((res)=> {
+                return res.json()
+            })
+            .then(function(json){
+                if(json['message'] == "record created successfully"){
+                    console.log(json.message)
+                    document.getElementById('salemsg').innerHTML="Thank you, sale made successfully!"
+                }else if(json['message'] == "Enter correct price"){
+                    document.getElementById('salemsg').innerHTML="Delete this Item from cart and enter the correct price";
+                }else{
+                    document.getElementById('salemsg').innerHTML=json.message;
+                    
+                }        
+            })                
+
+}
    
 }
 
-    
+
+
 
